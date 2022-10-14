@@ -17,7 +17,7 @@ pyautogui.press("enter")
 
 # O PYPERCLIP É MAIS RECOMENDÁVEL POIS COPIA O LINK COM CARACTERES ESPECIAIS
 time.sleep(1)
-pyperclip.copy("")
+pyperclip.copy("https://drive.google.com/drive/folders/1RzTsEMSzLcaLp8FFJE9MTZ8yxgspsx3d?usp=sharing")
 
 # COLA O LINK ACIMA E EXECUTA COM ENTER
 pyautogui.hotkey("ctrl", "v")
@@ -41,7 +41,7 @@ pyautogui.click(x=1025, y=561)  # SOLICITA O DOWNLOAD
 time.sleep(7)
 
 # PASSO 4 - CALCULAR OS INDICADORES
-tabela = pd.read_excel(r"")
+tabela = pd.read_excel(r"C:\Users\KAL-EL\Downloads\Vendas - Dez.xlsx")
 print(tabela.head())
 
 quantidade = tabela['Quantidade'].sum()  # QUANTIDADE DE PRODUTOS VENDIDOS
@@ -51,7 +51,7 @@ print(faturamento)
 
 # PASSO 5 - ENTRAR NO EMAIL
 pyautogui.hotkey("ctrl", "t")
-pyperclip.copy("")
+pyperclip.copy("https://mail.google.com/mail/u/0/#inbox")
 pyautogui.hotkey("ctrl", "v")
 pyautogui.press("enter")
 time.sleep(7)
@@ -59,7 +59,7 @@ time.sleep(7)
 # PASSO 6 - ENVIAR O RELATÓRIO
 pyautogui.click(x=76, y=200)  # CLICAR EM ESCREVER NO GMAIL
 
-pyautogui.write("")  # COLAR O EMAIL DO DESTINATÁRIO
+pyautogui.write("ricardo_santins@live.com")  # COLAR O EMAIL DO DESTINATÁRIO
 pyautogui.press("tab")
 pyautogui.press("tab")
 time.sleep(1)
