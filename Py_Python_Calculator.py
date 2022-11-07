@@ -1,6 +1,6 @@
 # CALCULADORA EM PYTHON
 print("*************** PYCALC ***************")
-print("")
+print("HELLO!")
 
 
 # FUNÇÕES DAS OPERAÇÕES MATEMÁTICAS
