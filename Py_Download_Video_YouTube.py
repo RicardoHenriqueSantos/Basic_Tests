@@ -26,8 +26,9 @@ print(f"VIEWS: {yt.views}")
 vd = yt.streams.get_highest_resolution()
 
 # INFORMANDO O CAMINHO ONDE SER SALVO O ARQUIVO
-caminho = r"C:"
+caminho = r""
 vd.download(caminho)
 
 # MENSAGEM DE CONCLUSÃO DO PROCESSO E ONDE ESTÁ SALVO O VÍDEO
 messagebox.showinfo("Mensagem", f"CONCLUÍDO! SALVO EM {caminho}")
+
