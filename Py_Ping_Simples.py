@@ -1,0 +1,13 @@
+import os       # INTEGRA OS RECURSOS E PROGRAMAS DO SO
+
+print("#" * 60) # FORMATAÇÃO SIMPLES
+
+# VARIÁVEL IRÁ RECEBER A INFORMAÇÃO A SER PROCESSADA - IP OU HOST
+ip_ou_host = input("INSIRA O IP OU HOST A SER VERIFICADO: ")
+
+print("-" * 60) # FORMATAÇÃO SIMPLES
+
+# EXECUTANDO UM COMANDO DA BIBLIOTECA OS | PING -N <NÚMERO DE PACOTES> <IP OU HOST>
+os.system(f"ping -n 6 {ip_ou_host}")
+
+print("-" * 60) # FORMATAÇÃO SIMPLES
